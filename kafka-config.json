@@ -1,0 +1,6 @@
+{
+    "groupId": "inventory_group",
+    "kafkaTopic": "e_commerce_gateway_topic",
+    "broker": "localhost:9092",
+    "clientId": "inventory_service"
+}
