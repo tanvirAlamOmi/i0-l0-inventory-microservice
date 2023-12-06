@@ -10,7 +10,7 @@ export class ProductsService {
         @InjectModel(Product.name) private readonly model: Model<ProductDocument>,
         // @Inject('KAFKA_SERVICE') private readonly client: ClientKafka
     ){}
-    async findAll(): Promise<any> {
+    async findAll(): Promise<Product[]> {
         return await this.model.find().exec(); 
     }
 
